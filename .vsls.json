@@ -2,7 +2,6 @@
     "$schema": "http://json.schemastore.org/vsls",
     "excludeFiles": [
         "bonusCells.js",
-        "pins.js",
-        "signatures.js"
+        "pins.js"
     ]
 }
