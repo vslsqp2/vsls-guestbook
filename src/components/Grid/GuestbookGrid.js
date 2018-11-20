@@ -53,9 +53,6 @@ export default class GuestbookGrid extends Component {
 
     return (
       <GridContainer>
-        <GridLegend />
-        <Grid>{cells}</Grid>
-        <GridArrow />
       </GridContainer>
     );
   }
