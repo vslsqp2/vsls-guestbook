@@ -44,6 +44,7 @@ export default class GuestbookGrid extends Component {
     activeSignatures[activeSignature].isActive = true;
     
     this.this.setState({ signatures: this.state.signatures });
+    //test
   }
 
   render() {
