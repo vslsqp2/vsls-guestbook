@@ -43,7 +43,7 @@ export default class GuestbookGrid extends Component {
     const activeSignature = Math.floor(Math.random() * activeSignatures.length);
     activeSignatures[activeSignature].isActive = true;
 
-    
+    // I want to do soemthing else
     
     this.this.setState({ signatures: this.state.signatures });
     //test
