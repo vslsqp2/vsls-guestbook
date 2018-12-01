@@ -39,7 +39,11 @@ export default class GuestbookGrid extends Component {
    */
   updateActiveSignature(activeSignatures) {
     activeSignatures.forEach(signature => delete signature.isActive);
- 
+
+    const activeSignature = Math.floor(Math.random() * activeSignatures.length);
+    activeSignatures[activeSignature].isActive = true;
+    
+    this.this.setState({ signatures: this.state.signatures });
   }
 
   render() {
