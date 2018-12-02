@@ -26,9 +26,7 @@ export default class GuestbookGrid extends Component {
     if (activeSignatures.length === 0) {
       return;
     }
-
-    //Other change causing merge conflict
-
+    
     this.updateActiveSignature(activeSignatures);
     setInterval(this.updateActiveSignature.bind(this, activeSignatures), 2000);
   }
