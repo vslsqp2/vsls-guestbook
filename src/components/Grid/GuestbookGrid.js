@@ -23,7 +23,12 @@ export default class GuestbookGrid extends Component {
     // Determine whether we have any actual signatures
     // before we attempt to start the "active" carousel
     const activeSignatures = this.state.signatures.filter(({ signature }) => typeof signature === "object");
-    
+    if (activeSignatures.length === 0) {
+      return;
+    }
+
+    this.updateActiveSignature(activeSignatures);
+    setInterval(this.updateActiveSignature.bind(this, activeSignatures), 2000);
   }
 
   /**
